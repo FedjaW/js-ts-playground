@@ -23,3 +23,19 @@ Every element in a collection has to be compare to every other element. THe hand
 ## Exponential time: 2 ^ n
 
 If you add a single element to a colleciton, the processing power required doubles.
+
+## Identifying Runtime Complexity
+
+- Iterating with a simple for loop through a single collection -> "Probably" O(n) -> Linear
+
+- Iterating through half of a collection -> Still O(n). There are no constants in runtime.
+
+- Iterating through two different collections with seperate for loops -> O(n + m)
+
+- Two nested for loops iterating over the same collection -> O(n^2)
+
+- Two nested for loops iterating over different collections -> O(n*m)
+
+- Sorting -> O(n*log(n))
+
+- Searching a sorted array -> O(log(n))
