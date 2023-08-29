@@ -6,15 +6,20 @@
 //     [[1, 2],
 //     [4, 3]]
 //   matrix(3)
-//     [[1, 2, 3],
-//     [8, 9, 4],
-//     [7, 6, 5]]
+//     [[1, 2, 3], [8, 9, 4], [7, 6, 5]]
 //  matrix(4)
-//     [[1,   2,  3, 4],
-//     [12, 13, 14, 5],
-//     [11, 16, 15, 6],
-//     [10,  9,  8, 7]]
+//     [[1, 2, 3, 4], [12, 13, 14, 5], [11, 16, 15, 6], [10, 9, 8, 7]]
 
-function matrix(n) {}
+function matrix(n) {
+    let firstArray = []
+    let value = 1
+
+    for (let i = 0; i < n; i++) {
+        firstArray.push(value)
+        value++
+    }
+}
+
+matrix(3)
 
 module.exports = matrix;
