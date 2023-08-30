@@ -20,7 +20,7 @@ class Queue {
     remove() {
         if (this.a.length >= 0) {
             const x = this.a[0]
-            this.a.shift()
+            this.a.shift() // more elegant to use unshift()
             return x
         }
 
