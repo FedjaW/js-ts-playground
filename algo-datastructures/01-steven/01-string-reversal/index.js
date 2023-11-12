@@ -13,7 +13,7 @@ function reverse2(str) {
         reversedString.push(str[index])
     }
 
-    return reversedString
+    return reversedString.join('')
 }
 
 // other solution
