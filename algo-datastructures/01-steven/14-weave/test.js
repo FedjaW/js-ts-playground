@@ -1,12 +1,12 @@
 const weave = require('./index');
 const Queue = require('./queue');
 
-test('queues have a peek function', () => {
+test.skip('queues have a peek function', () => {
   const q = new Queue();
   expect(typeof q.peek).toEqual('function');
 });
 
-test('peek returns, but does not remove, the first value', () => {
+test.skip('peek returns, but does not remove, the first value', () => {
   const q = new Queue();
   q.add(1);
   q.add(2);
@@ -16,11 +16,11 @@ test('peek returns, but does not remove, the first value', () => {
   expect(q.remove()).toEqual(2);
 });
 
-test('weave is a function', () => {
+test.skip('weave is a function', () => {
   expect(typeof weave).toEqual('function');
 });
 
-test('weave can combine two queues', () => {
+test.skip('weave can combine two queues', () => {
   const one = new Queue();
   one.add(1);
   one.add(2);

@@ -7,7 +7,7 @@
 //   reverse('Greetings!') === '!sgniteerG'
 
 // my solution
-function reverse(str) {
+function reverse2(str) {
     const reversedString = []
     for (let index = str.length-1; index >= 0; index--) {
         reversedString.push(str[index])
@@ -17,7 +17,7 @@ function reverse(str) {
 }
 
 // other solution
-function reverse2(str) {
+function reverse(str) {
     return str.split('').reverse().join('')
 }
 
