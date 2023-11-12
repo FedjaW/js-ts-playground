@@ -1,3 +1,4 @@
+// my own solution
 export default function bs_list(haystack: number[], needle: number): boolean {
     // Remember: the haystack must be (is) sorted!
     // 0 ........x......... N
