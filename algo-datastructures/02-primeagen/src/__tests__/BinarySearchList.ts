@@ -1,4 +1,4 @@
-import binary_fn from "@code/BinarySearchList";
+import binary_fn from "../day1/BinarySearchList";
 
 test("binary search array", function () {
     const foo = [1, 3, 4, 69, 71, 81, 90, 99, 420, 1337, 69420];
