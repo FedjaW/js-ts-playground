@@ -10,6 +10,8 @@ const checkPayload = ref("/");
 async function ping() {
   console.log("ping request send");
   const response = await fetch("http://localhost:8080/ping", {
+    mode: "cors",
+    credentials: "include",
     method: "GET",
     headers: {
       "Content-Type": "application/json",
@@ -23,6 +25,8 @@ async function check() {
   console.log("check request send");
 
   const response = await fetch("http://localhost:8080/check", {
+    mode: "cors",
+    credentials: "include",
     method: "GET",
     headers: {
       "Content-Type": "application/json",
@@ -31,7 +35,7 @@ async function check() {
   console.log(response);
   const jsonResult = await response.json();
   console.log(jsonResult);
-  checkPayload.value = jsonResult.cookie;
+  checkPayload.value = jsonResult;
 }
 </script>
 

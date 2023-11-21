@@ -5,7 +5,7 @@ import cors from "cors";
 async function main() {
   const api = express();
   api.use(json());
-  api.use(cors());
+  api.use(cors({ origin: "http://localhost:5173", credentials: true }));
   api.use(
     cookieSession({
       signed: false,
